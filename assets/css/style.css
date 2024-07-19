@@ -71,6 +71,10 @@ a:focus {
 .dark-color {
     color: #120404;
 }
+.light-color {
+    color: #120404;
+    opacity: .7;
+}
 .fw-600 {
     font-weight: 600;
 }
@@ -1414,6 +1418,45 @@ footer .copyrights {
 .playlist-section .nav-tabs .nav-item .nav-link.active i span::before {
     color: var(--primary);
 }
+.playlist-section .attachment-list li {
+    background: var(--grey-font);
+    padding: 1.25rem;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px -1px rgba(0, 0, 0, 0.25);
+    margin-bottom: 1rem;
+}
+.playlist-section .attachment-list li .file-info p {
+    font-size: 1.1rem;
+}
+.playlist-section .attachment-list li .file-info i {
+    font-size: 2rem;
+    width: 3.5rem;
+    height: 3.5rem;
+    line-height: 3.5rem;
+    text-align: center;
+    background: rgba(83, 15, 15, 0.20);
+    border-radius: 50%;
+}
+.playlist-section .attachment-list li .like-check .like-btn {
+    border-radius: 5px;
+    background: #FFF;
+    box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.25);
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 2.875rem;
+    height: 2.875rem;
+    outline: none;
+}
+.playlist-section .attachment-list li .like-check .like-btn i:before {
+    color: #28303F;
+    opacity: .4;
+}
+/* .playlist-section .attachment-list li .like-check .btn-check:active+.like-btn i:before, */
+.playlist-section .attachment-list li .like-check .btn-check:checked+.like-btn i:before {
+    color: #c32727;
+    opacity: 1;
+}
 
 /* .playlist-section .embed-container {
     padding: 56.25% 0 0 0;
@@ -1443,6 +1486,16 @@ footer .copyrights {
 /**
     Responsive
 **/
+@media (min-width: 1500px) {
+    .col-xxxl-3 {
+        flex: 0 0 auto;
+        width: 25%;
+    }
+    .col-xxxl-9 {
+        flex: 0 0 auto;
+        width: 75%;
+    }
+}
 @media (min-width: 1400px) {
 	.container {
 		max-width: 86%;
@@ -1574,6 +1627,12 @@ footer .copyrights {
     .cart-section .cart-card .cart-img img {
         height: auto;
         max-height: 12rem;
+    }
+    .playlist-section .videos-list {
+        max-height: 35rem;
+    }
+    .playlist-section .video-container {
+        height: 24rem;
     }
 }
 
