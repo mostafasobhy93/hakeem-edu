@@ -63,6 +63,64 @@ $(document).ready(function () {
         autoplayTimeout: 5000,
     });
 
+//    blog slider
+    $(".blog-slides").owlCarousel({
+        loop: false,
+        items: 3,
+        dots: false,
+        nav: false,
+        active: true,
+        margin: 20,
+        rtl: isRTL,
+        autoplay: false,
+        responsive : {
+            0 : {
+                items: 1,
+            },
+            768 : {
+                items: 2,
+            },
+            992 : {
+                items: 3,
+            }
+        }
+    });
+    $(".blog-slider1 .carousel-arrows .next").on("click", function() {
+        $(".blog-slides").trigger("next.owl.carousel");
+    });
+    $(".blog-slider1 .carousel-arrows .prev").on("click", function() {
+        $(".blog-slides").trigger("prev.owl.carousel");
+    });
+
+//    blog slider
+    $(".blog-slides2").owlCarousel({
+        loop: false,
+        items: 3,
+        dots: false,
+        nav: false,
+        active: true,
+        margin: 20,
+        rtl: isRTL,
+        autoplay: false,
+        responsive : {
+            0 : {
+                items: 1,
+            },
+            768 : {
+                items: 2,
+            },
+            992 : {
+                items: 3,
+            }
+        }
+    });
+    $(".blog-slider2 .carousel-arrows .next").on("click", function() {
+        $(".blog-slides2").trigger("next.owl.carousel");
+    });
+    $(".blog-slider2 .carousel-arrows .prev").on("click", function() {
+        $(".blog-slides2").trigger("prev.owl.carousel");
+    });
+
 //  Hide coupon
     $('.hide-coupon').click(function() {
         $(this).parent('.coupon').remove();
