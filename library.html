@@ -1,0 +1,770 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+
+	<title>Click and Learn</title>
+
+	<!-- Favicon -->
+	<link rel="icon" type="image/png" href="assets/img/favicon.png" />
+
+	<!-- Bootstrap -->
+	<link href="assets/css/vendors/bootstrap.rtl.min.css" rel="stylesheet">
+
+	<!-- owl carousel slider -->
+	<link rel="stylesheet" href="assets/css/vendors/owl.carousel.min.css">
+	<link rel="stylesheet" href="assets/css/vendors/owl.theme.default.min.css">
+
+	<!-- Icons -->
+	<link rel="stylesheet" href="assets/css/icons/style.css">
+
+	<!-- animate.css -->
+	<link rel="stylesheet" href="assets/css/vendors/animate.min.css">
+
+	<!-- main css -->
+	<link href="assets/css/style.css" rel="stylesheet">
+</head>
+
+<body>
+	<!-- start header -->
+	<header class="white-header">
+		<div class="container">
+			<nav>
+				<div class="logo">
+					<a href="index.html"><img src="assets/img/logo2.png"></a>
+				</div>
+				<div class="bars">
+					<i class="icon-lines"></i>
+				</div>
+				<div class="links-list">
+					<ul class="d-flex">
+						<li class="list-item"><a class="link active" href="index.html">الرئيسية</a></li>
+						<li class="list-item"><a class="link" href="courses.html">المناهج التعليمية</a></li>
+						<li class="list-item"><a class="link" href="offers.html">العروض</a></li>
+						<li class="list-item"><a class="link" href="blog.html">مقالات</a></li>
+						<li class="list-item"><a class="link" href="teachers.html">المدرسين</a></li>
+					</ul>
+				</div>
+				<div class="nav-account d-flex align-items-center gap-4">
+					<div class="notification dropdown">
+						<button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+							<i class="icon-notification"><span class="path1"></span><span class="path2"></span><span class="path3"></span></i>
+						</button>
+						<ul class="dropdown-menu dropdown-menu-end">
+							<li class="d-flex">
+								<div class="d-flex gap-1">
+									<img src="assets/img/user.png" alt="">
+									<p class="notification-text mb-0">تم اضافة دورة جديدة من قبل المدرس <b>أحمد رحيم</b></p>
+								</div>
+								<span class="time">منذ 3 دقائق</span>
+							</li>
+							<li class="d-flex">
+								<div class="d-flex gap-1">
+									<img src="assets/img/user.png" alt="">
+									<p class="notification-text mb-0">تم اضافة دورة جديدة من قبل المدرس <b>أحمد رحيم</b></p>
+								</div>
+								<span class="time">منذ 3 دقائق</span>
+							</li>
+							<li class="d-flex">
+								<div class="d-flex gap-1">
+									<img src="assets/img/user.png" alt="">
+									<p class="notification-text mb-0">تم اضافة دورة جديدة من قبل المدرس <b>أحمد رحيم</b></p>
+								</div>
+								<span class="time">منذ 3 دقائق</span>
+							</li>
+							<li class="show-all"><a href="notifications.html">عرض جميع الاشعارات</a></li>
+						</ul>
+					</div>
+					<a href="cart.html">
+						<i class="icon-cart"><i class="path1"></i><i class="path2"></i><i class="path3"></i><i class="path4"></i><i class="path5"></i></i>
+					</a>
+					<a href="login.html" class="login d-flex align-items-center gap-1">
+						<p class="text-end mb-0"><span>تسجيل الدخول </span><span class="d-block">الحساب</span></p>
+						<i class="icon-user"><span class="path1"></span><span class="path2"></span></i>
+					</a>
+					<div class="account dropdown" style="display: none;">
+						<button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+							<i class="icon-arrow-down"></i> محمد علي
+							<img src="assets/img/user.png" class="img-fluid" alt="" width="40" height="40">
+						</button>
+						<ul class="dropdown-menu dropdown-menu-end py-3">
+							<li>
+								<a href="account.html" class="d-flex gap-2 align-items-center"><i class="icon-user"><span class="path1"></span><span class="path2"></span></i> <span>حسابي</span></a>
+							</li>
+							<li>
+								<a href="account.html" class="d-flex gap-2 align-items-center"><i class="icon-home-wave"><span class="path1"></span><span class="path2"></span></i> <span>المكتبة</span></a>
+							</li>
+							<li>
+								<a href="account.html" class="d-flex gap-2 align-items-center"><i class="icon-mail-fast"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span></i> <span>تواصل معنا</span></a>
+							</li>
+							<li>
+								<a href="account.html" class="d-flex gap-2 align-items-center"><i class="icon-user"><span class="path1"></span><span class="path2"></span></span><span class="path3"></span></i> <span>تسجيل الخروج</span></a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</div>
+	</header>
+	<!-- end header -->
+
+	<!-- library -->
+	<section class="library-section sec-padding bg-grey wow fadeInUp">
+		<div class="container">
+			<div class="section-title2 mb-45">
+				<h2 class="mb-0">المكتبة</h2>
+			</div>
+			<ul class="nav nav-tabs def-tabs mb-46" id="myTab" role="tablist">
+				<li class="nav-item" role="presentation">
+					<button class="nav-link active" id="myCourses-tab" data-bs-toggle="tab" data-bs-target="#myCourses" type="button" role="tab" aria-selected="true">
+						<i class="icon-book"><span class="path1"></span><span class="path2"></span></i> دوراتي
+					</button>
+				</li>
+				<li class="nav-item" role="presentation">
+					<button class="nav-link" id="favorite-tab" data-bs-toggle="tab" data-bs-target="#favorite" type="button" role="tab" aria-selected="false">
+						<i class="icon-heart"></i> المفضلة
+					</button>
+				</li>
+				<li class="nav-item" role="presentation">
+					<button class="nav-link" id="questionBank-tab" data-bs-toggle="tab" data-bs-target="#questionBank" type="button" role="tab" aria-selected="false">
+						<i class="icon-pencil-book"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span></i>
+						بنك الأسئلة
+					</button>
+				</li>
+				<li class="nav-item" role="presentation">
+					<button class="nav-link" id="results-tab" data-bs-toggle="tab" data-bs-target="#results" type="button" role="tab" aria-selected="false">
+						<i class="icon-exam"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span><span class="path6"></span><span class="path7"></span></i>
+						نتائج الأختبارات
+					</button>
+				</li>
+			</ul>
+			<div class="tab-content p-3 pt-4" id="myTabContent">
+				<!-- My Courses Tab -->
+				<div class="tab-pane fade show active" id="myCourses" role="tabpanel">
+					<div class="row courses-section">
+						<div class="col-xl-4 col-lg-6">
+							<div class="course-card card">
+								<div class="card-img position-relative">
+									<img src="assets/img/courses/1.png" class="img-fluid">
+									<span class="card-label">تفاعلي</span>
+									<span class="course-name position-absolute top-50 start-50 translate-middle">الرياضيات</span>
+								</div>
+								<div class="card-body">
+									<a href="course-details.html">
+										<h5 class="card-title mb-3">دورة مادة الكيمياء تهدف إلى تعريف الطلاب بمفاهيم ومبادئ الكيمياء الأساسية. دورة مادة الكيمياء</h5>
+									</a>
+									<div class="course-info d-flex justify-content-between align-items-center">
+										<div class="d-flex align-items-center gap-1">
+											<img src="assets/img/user.png" width="40" height="40" alt="">
+											<span>أ/محمد غالي</span>
+										</div>
+										<div>
+											<i class="icon-hourglass-end"><span class="path1"></span><span class="path2"></span></i>
+											<span class="duration">مدة الدورة 5 ساعات</span>
+										</div>
+									</div>
+								</div>
+								<div class="card-footer d-flex">
+									<a href="course-details.html" class="main-btn">
+										عرض الدورة
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-xl-4 col-lg-6">
+							<div class="course-card card">
+								<div class="card-img position-relative">
+									<img src="assets/img/courses/2.png" class="img-fluid">
+									<span class="course-name position-absolute top-50 start-50 translate-middle">الرياضيات</span>
+								</div>
+								<div class="card-body">
+									<a href="course-details.html">
+										<h5 class="card-title mb-3">دورة مادة الكيمياء تهدف إلى تعريف الطلاب بمفاهيم ومبادئ الكيمياء الأساسية. دورة مادة الكيمياء</h5>
+									</a>
+									<div class="course-info d-flex justify-content-between align-items-center">
+										<div class="d-flex align-items-center gap-1">
+											<img src="assets/img/user.png" width="40" height="40" alt="">
+											<span>أ/محمد غالي</span>
+										</div>
+										<div>
+											<i class="icon-hourglass-end"><span class="path1"></span><span class="path2"></span></i>
+											<span class="duration">مدة الدورة 5 ساعات</span>
+										</div>
+									</div>
+								</div>
+								<div class="card-footer d-flex">
+									<a href="course-details.html" class="main-btn">
+										عرض الدورة
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-xl-4 col-lg-6">
+							<div class="course-card card">
+								<div class="card-img position-relative">
+									<img src="assets/img/courses/3.png" class="img-fluid">
+									<span class="card-label">تفاعلي</span>
+									<span class="course-name position-absolute top-50 start-50 translate-middle">الرياضيات</span>
+								</div>
+								<div class="card-body">
+									<a href="course-details.html">
+										<h5 class="card-title mb-3">دورة مادة الكيمياء تهدف إلى تعريف الطلاب بمفاهيم ومبادئ الكيمياء الأساسية. دورة مادة الكيمياء</h5>
+									</a>
+									<div class="course-info d-flex justify-content-between align-items-center">
+										<div class="d-flex align-items-center gap-1">
+											<img src="assets/img/user.png" width="40" height="40" alt="">
+											<span>أ/محمد غالي</span>
+										</div>
+										<div>
+											<i class="icon-hourglass-end"><span class="path1"></span><span class="path2"></span></i>
+											<span class="duration">مدة الدورة 5 ساعات</span>
+										</div>
+									</div>
+								</div>
+								<div class="card-footer d-flex">
+									<a href="course-details.html" class="main-btn">
+										عرض الدورة
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- Favorite Tab -->
+				<div class="tab-pane fade" id="favorite" role="tabpanel">
+
+					<!-- Inner Tabs -->
+					<ul class="nav nav-tabs inner-tabs border-0 gap-3 mb-45" id="favoriteTabs" role="tablist">
+						<li class="nav-item" role="presentation">
+							<button class="main-btn outline active" id="favCourses-tab" data-bs-toggle="tab" data-bs-target="#favCourses" type="button" role="tab" aria-selected="true">
+								الدورات
+							</button>
+						</li>
+						<li class="nav-item" role="presentation">
+							<button class="main-btn outline" id="favFiles-tab" data-bs-toggle="tab" data-bs-target="#favFiles" type="button" role="tab" aria-selected="false">
+								الملفات
+							</button>
+						</li>
+						<li class="nav-item" role="presentation">
+							<button class="main-btn outline" id="favTeachers-tab" data-bs-toggle="tab" data-bs-target="#favTeachers" type="button" role="tab" aria-selected="false">
+								المعلمون
+							</button>
+						</li>
+					</ul>
+					<!-- Inner Tab Content -->
+					<div class="tab-content" id="myFavoriteContent">
+
+						<!-- favCourses -->
+						<div class="tab-pane fade show active" id="favCourses" role="tabpanel">
+							<div class="courses-section">
+								<div class="row">
+									<div class="col-xl-4 col-lg-6">
+										<div class="course-card card">
+											<div class="card-img position-relative">
+												<img src="assets/img/courses/1.png" class="img-fluid">
+												<span class="card-label">تفاعلي</span>
+												<span class="course-name position-absolute top-50 start-50 translate-middle">الرياضيات</span>
+												<div class="like-check">
+													<input type="checkbox" class="btn-check" id="like-course1" autocomplete="off">
+													<label class="btn like-btn" for="like-course1">
+														<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+															<path d="M12.765 4.70229L12 5.52422L11.235 4.70229C9.12233 2.43257 5.69709 2.43257 3.58447 4.70229C1.47184 6.972 1.47184 10.6519 3.58447 12.9217L10.4699 20.3191C11.315 21.227 12.685 21.227 13.5301 20.3191L20.4155 12.9217C22.5282 10.6519 22.5282 6.972 20.4155 4.70229C18.3029 2.43257 14.8777 2.43257 12.765 4.70229Z" stroke="#530F0F" stroke-width="1.5" stroke-linejoin="round"/>
+														</svg>
+														<i class="icon-heart"></i>								
+													</label>
+												</div>
+											</div>
+											<div class="card-body">
+												<a href="course-details.html">
+													<h5 class="card-title mb-3">دورة مادة الكيمياء تهدف إلى تعريف الطلاب بمفاهيم ومبادئ الكيمياء الأساسية. دورة مادة الكيمياء</h5>
+												</a>
+												<div class="course-info d-flex justify-content-between align-items-center">
+													<div class="d-flex align-items-center gap-1">
+														<img src="assets/img/user.png" width="40" height="40" alt="">
+														<span>أ/محمد غالي</span>
+													</div>
+													<div>
+														<i class="icon-hourglass-end"><span class="path1"></span><span class="path2"></span></i>
+														<span class="duration">مدة الدورة 5 ساعات</span>
+													</div>
+												</div>
+											</div>
+											<div class="card-footer d-flex">
+												<button class="add-to-cart">
+													 اضف الي السلة
+													<i class="icon-cart1"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span></i>
+												</button>
+												<button class="price">$299.99</button>
+											</div>
+										</div>
+									</div>
+									<div class="col-xl-4 col-lg-6">
+										<div class="course-card card">
+											<div class="card-img position-relative">
+												<img src="assets/img/courses/2.png" class="img-fluid">
+												<span class="course-name position-absolute top-50 start-50 translate-middle">الرياضيات</span>
+												<div class="like-check">
+													<input type="checkbox" class="btn-check" id="like-course2" autocomplete="off">
+													<label class="btn like-btn" for="like-course2">
+														<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+															<path d="M12.765 4.70229L12 5.52422L11.235 4.70229C9.12233 2.43257 5.69709 2.43257 3.58447 4.70229C1.47184 6.972 1.47184 10.6519 3.58447 12.9217L10.4699 20.3191C11.315 21.227 12.685 21.227 13.5301 20.3191L20.4155 12.9217C22.5282 10.6519 22.5282 6.972 20.4155 4.70229C18.3029 2.43257 14.8777 2.43257 12.765 4.70229Z" stroke="#530F0F" stroke-width="1.5" stroke-linejoin="round"/>
+														</svg>
+														<i class="icon-heart"></i>								
+													</label>
+												</div>
+											</div>
+											<div class="card-body">
+												<a href="course-details.html">
+													<h5 class="card-title mb-3">دورة مادة الكيمياء تهدف إلى تعريف الطلاب بمفاهيم ومبادئ الكيمياء الأساسية. دورة مادة الكيمياء</h5>
+												</a>
+												<div class="course-info d-flex justify-content-between align-items-center">
+													<div class="d-flex align-items-center gap-1">
+														<img src="assets/img/user.png" width="40" height="40" alt="">
+														<span>أ/محمد غالي</span>
+													</div>
+													<div>
+														<i class="icon-hourglass-end"><span class="path1"></span><span class="path2"></span></i>
+														<span class="duration">مدة الدورة 5 ساعات</span>
+													</div>
+												</div>
+											</div>
+											<div class="card-footer d-flex">
+												<button class="remove-from-cart">
+													إزالة من السلة
+													<i class="icon-cart1"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span></i>
+												</button>
+												<button class="price">$299.99</button>
+											</div>
+										</div>
+									</div>
+									<div class="col-xl-4 col-lg-6">
+										<div class="course-card card">
+											<div class="card-img position-relative">
+												<img src="assets/img/courses/3.png" class="img-fluid">
+												<span class="course-name position-absolute top-50 start-50 translate-middle">الرياضيات</span>
+												<div class="like-check">
+													<input type="checkbox" class="btn-check" id="like-course3" autocomplete="off">
+													<label class="btn like-btn" for="like-course3">
+														<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+															<path d="M12.765 4.70229L12 5.52422L11.235 4.70229C9.12233 2.43257 5.69709 2.43257 3.58447 4.70229C1.47184 6.972 1.47184 10.6519 3.58447 12.9217L10.4699 20.3191C11.315 21.227 12.685 21.227 13.5301 20.3191L20.4155 12.9217C22.5282 10.6519 22.5282 6.972 20.4155 4.70229C18.3029 2.43257 14.8777 2.43257 12.765 4.70229Z" stroke="#530F0F" stroke-width="1.5" stroke-linejoin="round"/>
+														</svg>
+														<i class="icon-heart"></i>								
+													</label>
+												</div>
+											</div>
+											<div class="card-body">
+												<a href="course-details.html">
+													<h5 class="card-title mb-3">دورة مادة الكيمياء تهدف إلى تعريف الطلاب بمفاهيم ومبادئ الكيمياء الأساسية. دورة مادة الكيمياء</h5>
+												</a>
+												<div class="course-info d-flex justify-content-between align-items-center">
+													<div class="d-flex align-items-center gap-1">
+														<img src="assets/img/user.png" width="40" height="40" alt="">
+														<span>أ/محمد غالي</span>
+													</div>
+													<div>
+														<i class="icon-hourglass-end"><span class="path1"></span><span class="path2"></span></i>
+														<span class="duration">مدة الدورة 5 ساعات</span>
+													</div>
+												</div>
+											</div>
+											<div class="card-footer d-flex">
+												<button class="add-to-cart">
+													 اضف الي السلة
+													<i class="icon-cart1"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span></i>
+												</button>
+												<button class="price">$299.99</button>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="pagination justify-content-center mt-2 mb-4">
+									<a class="btn next"><i class="icon-chevron-right"></i></a>
+									<a class="btn prev disabled"><i class="icon-chevron-left"></i></a>
+								</div>
+							</div>
+						</div>
+
+						<!-- favFiles -->
+						<div class="tab-pane fade" id="favFiles" role="tabpanel">
+							<ul class="attachment-list">
+								<li class="d-flex align-items-center justify-content-between flex-wrap gap-3">
+									<div class="file-info d-flex align-items-center gap-2">
+										<i class="icon-pdf"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span></i>
+										<p class="mb-0 dark-color">
+											1-أساسيات التفاضل والرياضة التطبيقية (2)
+											<span class="small-text light-color d-block">تاريخ الرفع 2024-4-12</span>
+										</p>
+									</div>
+									<div class="d-flex gap-2">
+										<button type="button" class="main-btn text-nowrap">تحميل الملف</button>
+										<div class="like-check">
+											<input type="checkbox" class="btn-check" id="like-check" autocomplete="off">
+											<label class="btn like-btn" for="like-check">
+												<i class="icon-heart"></i>
+											</label>
+										</div>
+									</div>
+								</li>
+								<li class="d-flex align-items-center justify-content-between flex-wrap gap-3">
+									<div class="file-info d-flex align-items-center gap-2">
+										<i class="icon-pdf"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span></i>
+										<p class="mb-0 dark-color">
+											1-أساسيات التفاضل والرياضة التطبيقية (2)
+											<span class="small-text light-color d-block">تاريخ الرفع 2024-4-12</span>
+										</p>
+									</div>
+									<div class="d-flex gap-2">
+										<button type="button" class="main-btn text-nowrap">تحميل الملف</button>
+										<div class="like-check">
+											<input type="checkbox" class="btn-check" id="like-check2" autocomplete="off">
+											<label class="btn like-btn" for="like-check2">
+												<i class="icon-heart"></i>
+											</label>
+										</div>
+									</div>
+								</li>
+								<li class="d-flex align-items-center justify-content-between flex-wrap gap-3">
+									<div class="file-info d-flex align-items-center gap-2">
+										<i class="icon-pdf"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span></i>
+										<p class="mb-0 dark-color">
+											1-أساسيات التفاضل والرياضة التطبيقية (2)
+											<span class="small-text light-color d-block">تاريخ الرفع 2024-4-12</span>
+										</p>
+									</div>
+									<div class="d-flex gap-2">
+										<button type="button" class="main-btn text-nowrap">تحميل الملف</button>
+										<div class="like-check">
+											<input type="checkbox" class="btn-check" id="like-check3" autocomplete="off">
+											<label class="btn like-btn" for="like-check3">
+												<i class="icon-heart"></i>
+											</label>
+										</div>
+									</div>
+								</li>
+							</ul>
+						</div>
+
+						<!-- favTeachers -->
+						<div class="tab-pane fade" id="favTeachers" role="tabpanel">
+							<div class="teachers-section">
+								<div class="row">
+									<div class="col-lg-4 col-md-6 mb-45">
+										<div class="teacher-card">
+											<div class="like-check">
+												<input type="checkbox" class="btn-check" id="like-check0" autocomplete="off">
+												<label class="btn like-btn" for="like-check0">
+													<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<path d="M12.765 4.70229L12 5.52422L11.235 4.70229C9.12233 2.43257 5.69709 2.43257 3.58447 4.70229C1.47184 6.972 1.47184 10.6519 3.58447 12.9217L10.4699 20.3191C11.315 21.227 12.685 21.227 13.5301 20.3191L20.4155 12.9217C22.5282 10.6519 22.5282 6.972 20.4155 4.70229C18.3029 2.43257 14.8777 2.43257 12.765 4.70229Z" stroke="#530F0F" stroke-width="1.5" stroke-linejoin="round"/>
+													</svg>
+													<i class="icon-heart"></i>								
+												</label>
+											</div>
+											<div class="card-img text-center mb-2">
+												<img src="assets/img/user2.png" class="img-fluid" alt="">
+											</div>
+											<h5 class="dark-color fw-600 text-center mb-1">أ/محمد غالي</h5>
+											<p class="dark-color opacity-70 text-center">مدرس لغة عربية</p>
+											<p class="dark-color small-text mb-0">هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص
+												العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد </p>
+											<a href="teacher-details.html" class="main-btn text-nowrap d-inline-flex align-items-center justify-content-center gap-2 w-100 mt-45">
+												متابعة الأستاذ
+												<i class="icon-user-add"><span class="path1"></span><span class="path2"></span><span class="path3"></span></i>
+											</a>
+										</div>
+									</div>
+									<div class="col-lg-4 col-md-6 mb-45">
+										<div class="teacher-card">
+											<div class="like-check">
+												<input type="checkbox" class="btn-check" id="like-check02" autocomplete="off">
+												<label class="btn like-btn" for="like-check02">
+													<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<path d="M12.765 4.70229L12 5.52422L11.235 4.70229C9.12233 2.43257 5.69709 2.43257 3.58447 4.70229C1.47184 6.972 1.47184 10.6519 3.58447 12.9217L10.4699 20.3191C11.315 21.227 12.685 21.227 13.5301 20.3191L20.4155 12.9217C22.5282 10.6519 22.5282 6.972 20.4155 4.70229C18.3029 2.43257 14.8777 2.43257 12.765 4.70229Z" stroke="#530F0F" stroke-width="1.5" stroke-linejoin="round"/>
+													</svg>
+													<i class="icon-heart"></i>								
+												</label>
+											</div>
+											<div class="card-img text-center mb-2">
+												<img src="assets/img/user2.png" class="img-fluid" alt="">
+											</div>
+											<h5 class="dark-color fw-600 text-center mb-1">أ/محمد غالي</h5>
+											<p class="dark-color opacity-70 text-center">مدرس لغة عربية</p>
+											<p class="dark-color small-text mb-0">هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص
+												العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد </p>
+											<a href="teacher-details.html" class="main-btn outline text-nowrap d-inline-flex align-items-center justify-content-center gap-2 w-100 mt-45">
+												إلغاء المتابعة
+												<i class="icon-user-remove"><span class="path1"></span><span class="path2"></span><span class="path3"></span></i>
+											</a>
+										</div>
+									</div>
+									<div class="col-lg-4 col-md-6 mb-45">
+										<div class="teacher-card">
+											<div class="like-check">
+												<input type="checkbox" class="btn-check" id="like-check03" autocomplete="off">
+												<label class="btn like-btn" for="like-check03">
+													<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<path d="M12.765 4.70229L12 5.52422L11.235 4.70229C9.12233 2.43257 5.69709 2.43257 3.58447 4.70229C1.47184 6.972 1.47184 10.6519 3.58447 12.9217L10.4699 20.3191C11.315 21.227 12.685 21.227 13.5301 20.3191L20.4155 12.9217C22.5282 10.6519 22.5282 6.972 20.4155 4.70229C18.3029 2.43257 14.8777 2.43257 12.765 4.70229Z" stroke="#530F0F" stroke-width="1.5" stroke-linejoin="round"/>
+													</svg>
+													<i class="icon-heart"></i>								
+												</label>
+											</div>
+											<div class="card-img text-center mb-2">
+												<img src="assets/img/user2.png" class="img-fluid" alt="">
+											</div>
+											<h5 class="dark-color fw-600 text-center mb-1">أ/محمد غالي</h5>
+											<p class="dark-color opacity-70 text-center">مدرس لغة عربية</p>
+											<p class="dark-color small-text mb-0">هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص
+												العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد </p>
+											<a href="teacher-details.html" class="main-btn outline text-nowrap d-inline-flex align-items-center justify-content-center gap-2 w-100 mt-45">
+												إلغاء المتابعة
+												<i class="icon-user-remove"><span class="path1"></span><span class="path2"></span><span class="path3"></span></i>
+											</a>
+										</div>
+									</div>
+								</div>
+								<div class="pagination justify-content-center mt-2 mb-4">
+									<a class="btn next"><i class="icon-chevron-right"></i></a>
+									<a class="btn prev disabled"><i class="icon-chevron-left"></i></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- questionBank Tab -->
+				<div class="tab-pane fade" id="questionBank" role="tabpanel">
+					<ul class="attachment-list question-bank">
+						<li class="d-flex align-items-center justify-content-between flex-wrap gap-3">
+							<div class="file-info d-flex align-items-center gap-2">
+								<i class="icon-pencil-book"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span></i>
+								<p class="mb-0 dark-color">
+									1-أساسيات التفاضل والرياضة التطبيقية (2)
+									
+									<span class="mb-0 d-block">
+										<span class="small-text light-color">عدد الأسئلة (12) سوأل</span>
+										<span class="light-color"> | </span>
+										<span class="small-text light-color"> مدة الأمتحان: 30دقيقة </span>
+									</span>
+								</p>
+							</div>
+							<div class="d-flex align-items-center gap-3">
+								<button type="button" class="main-btn outline text-nowrap" data-bs-toggle="modal" data-bs-target="#startExamModal">ابدأ الأختبار</button>
+							</div>	
+						</li>
+						<li class="d-flex align-items-center justify-content-between flex-wrap gap-3">
+							<div class="file-info d-flex align-items-center gap-2">
+								<i class="icon-pencil-book"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span></i>
+								<p class="mb-0 dark-color">
+									1-أساسيات التفاضل والرياضة التطبيقية (2)
+									
+									<span class="mb-0 d-block">
+										<span class="small-text light-color">عدد الأسئلة (12) سوأل</span>
+										<span class="light-color"> | </span>
+										<span class="small-text light-color"> مدة الأمتحان: 30دقيقة </span>
+									</span>
+								</p>
+							</div>
+							<div class="d-flex align-items-center gap-3">
+								<button type="button" class="main-btn outline text-nowrap" data-bs-toggle="modal" data-bs-target="#startExamModal">ابدأ الأختبار</button>
+							</div>
+						</li>
+						<li class="d-flex align-items-center justify-content-between flex-wrap gap-3">
+							<div class="file-info d-flex align-items-center gap-2">
+								<i class="icon-pencil-book"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span></i>
+								<p class="mb-0 dark-color">
+									1-أساسيات التفاضل والرياضة التطبيقية (2)
+									
+									<span class="mb-0 d-block">
+										<span class="small-text light-color">عدد الأسئلة (12) سوأل</span>
+										<span class="light-color"> | </span>
+										<span class="small-text light-color"> مدة الأمتحان: 30دقيقة </span>
+									</span>
+								</p>
+							</div>
+							<div class="d-flex align-items-center gap-3">
+								<button type="button" class="main-btn outline text-nowrap" data-bs-toggle="modal" data-bs-target="#startExamModal">ابدأ الأختبار</button>
+							</div>
+						</li>
+					</ul>
+					<div class="pagination justify-content-center mt-5 mb-4">
+						<a class="btn next"><i class="icon-chevron-right"></i></a>
+						<a class="btn prev disabled"><i class="icon-chevron-left"></i></a>
+					</div>
+				</div>
+
+				<!-- results Tab -->
+				<div class="tab-pane fade" id="results" role="tabpanel">
+					<ul class="attachment-list question-bank">
+						<li class="d-flex align-items-center justify-content-between flex-wrap gap-3">
+							<div class="file-info d-flex align-items-center gap-2">
+								<i class="icon-pdf"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span></i>
+								<p class="mb-0 dark-color">
+									1-أساسيات التفاضل والرياضة التطبيقية (2)
+									
+									<span class="mb-0 d-block">
+										<span class="small-text light-color">عدد الأسئلة (12) سوأل</span>
+										<span class="light-color"> | </span>
+										<span class="small-text light-color"> مدة الأمتحان: 30دقيقة </span>
+									</span>
+								</p>
+							</div>
+							<div class="d-flex align-items-center gap-3">
+								<a href="results.html" class="main-btn text-nowrap">عرض النتيجة</a>
+							</div>	
+						</li>
+						<li class="d-flex align-items-center justify-content-between flex-wrap gap-3">
+							<div class="file-info d-flex align-items-center gap-2">
+								<i class="icon-pdf"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span></i>
+								<p class="mb-0 dark-color">
+									1-أساسيات التفاضل والرياضة التطبيقية (2)
+									
+									<span class="mb-0 d-block">
+										<span class="small-text light-color">عدد الأسئلة (12) سوأل</span>
+										<span class="light-color"> | </span>
+										<span class="small-text light-color"> مدة الأمتحان: 30دقيقة </span>
+									</span>
+								</p>
+							</div>
+							<div class="d-flex align-items-center gap-3">
+								<a href="results.html" class="main-btn disabled text-nowrap">عرض النتيجة</a>
+							</div>
+						</li>
+						<li class="d-flex align-items-center justify-content-between flex-wrap gap-3">
+							<div class="file-info d-flex align-items-center gap-2">
+								<i class="icon-pdf"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span></i>
+								<p class="mb-0 dark-color">
+									1-أساسيات التفاضل والرياضة التطبيقية (2)
+									
+									<span class="mb-0 d-block">
+										<span class="small-text light-color">عدد الأسئلة (12) سوأل</span>
+										<span class="light-color"> | </span>
+										<span class="small-text light-color"> مدة الأمتحان: 30دقيقة </span>
+									</span>
+								</p>
+							</div>
+							<div class="d-flex align-items-center gap-3">
+								<a href="results.html" class="main-btn text-nowrap">عرض النتيجة</a>
+							</div>
+						</li>
+					</ul>
+					<div class="pagination justify-content-center mt-5 mb-4">
+						<a class="btn next"><i class="icon-chevron-right"></i></a>
+						<a class="btn prev disabled"><i class="icon-chevron-left"></i></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- start footer -->
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-6 mb-4 mb-lg-0">
+					<div class="footer-logo mb-2">
+						<img src="assets/img/logo.png">
+					</div>
+					<p class="text mb-45">هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل
+						هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق.</p>
+					<p class="copyrights mb-0 d-none d-lg-block">حقوق الطبع والنشر©2024 جميع الحقوق محفوظة</p>
+				</div>
+				<div class="col-lg-6">
+					<ul class="links-list def-color d-flex gap-3 justify-content-lg-end mb-46">
+						<li>
+							<a href="#" class="text-decoration-underline">معلومات عنا</a>
+						</li>
+						<li>
+							<a href="#" class="text-decoration-underline">تواصل معنا</a>
+						</li>
+						<li>
+							<a href="#" class="text-decoration-underline">الشورط والأحكام</a>
+						</li>
+						<li>
+							<a href="#" class="text-decoration-underline">سياسة الخصوصية</a>
+						</li>
+	
+					</ul>
+
+					<div class="d-flex align-items-center gap-45 justify-content-lg-end mb-46">
+						<p class="def-color">نحن نقبل</p>
+						<img src="assets/img/visa.png" class="img-fluid" alt="" >
+					</div>
+
+					<ul class="social-list d-flex gap-3 align-items-center justify-content-lg-end">
+						<li>
+							<a href="#">
+								<i class="icon-telegram"></i>							
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<i class="icon-linkedin"></i>								
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<i class="icon-instagram"></i>								
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<i class="icon-twitter"></i>					
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<i class="icon-facebook"></i>								
+							</a>
+						</li>
+					</ul>
+
+					<p class="copyrights mb-0 d-block d-lg-none mt-4">حقوق الطبع والنشر©2024 جميع الحقوق محفوظة</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!--      end footer -->
+
+	<!-- Modal -->
+	<div class="def-modal modal fade" id="startExamModal" tabindex="-1" aria-labelledby="startExamModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content border-0">
+				<div class="modal-body p-0">
+					<div class="modal-icon text-center">
+						<img src="assets/img/pencil.png" class="img-fluid">
+					</div>
+					<h3 class="text-center dark-color fw-600 mb-2">هل تريد بدأ الاختبار الآن</h3>
+					<p class="dark-color text-center opacity-70 fw-500 mb-0">أبدا اختبارك الآن وسيقوم المدرس بمراجعة الإجابات بعد الإرسال</p>
+				</div>
+				<div class="modal-footer border-0 p-0 mt-45">
+					<a href="exam.html" class="main-btn text-center">أبدا الآن</a>
+					<button type="button" class="main-btn outline" data-bs-dismiss="modal">لاحقا</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<!--        jquery -->
+	<script src="assets/js/vendors/jquery-3.3.1.min.js"></script>
+	<!--        wow -->
+	<script src="assets/js/vendors/wow.min.js"></script>
+	<script>
+		new WOW().init();
+
+	</script>
+
+	<!--        bootstrap library -->
+	<script src="assets/js/vendors/bootstrap.bundle.min.js"></script>
+
+	<!--        carousel -->
+	<script src="assets/js/vendors/owl.carousel.min.js"></script>
+
+	<!--        Main Js -->
+	<script src="assets/js/main.js"></script>
+</body>
+
+</html>

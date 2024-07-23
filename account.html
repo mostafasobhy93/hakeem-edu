@@ -24,17 +24,20 @@
 	<!-- animate.css -->
 	<link rel="stylesheet" href="assets/css/vendors/animate.min.css">
 
+	<!-- intTelInput.css -->
+	<link rel="stylesheet" href="assets/css/vendors/intlTelInput.css">
+
 	<!-- main css -->
 	<link href="assets/css/style.css" rel="stylesheet">
 </head>
 
 <body>
 	<!-- start header -->
-	<header>
+	<header class="white-header">
 		<div class="container">
 			<nav>
 				<div class="logo">
-					<a href="index.html"><img src="assets/img/logo.png"></a>
+					<a href="index.html"><img src="assets/img/logo2.png"></a>
 				</div>
 				<div class="bars">
 					<i class="icon-lines"></i>
@@ -111,104 +114,106 @@
 	</header>
 	<!-- end header -->
 
-	<!-- Page Banner -->
-	<div class="page-banner" style="background-image: url(assets/img/contact-banner.jpg);">
-		<div class="container position-relative">
-			<div class="row justify-content-center">
-				<div class="col-xl-7 col-md-10">
-					<div class="banner-content text-center">
-						<h1 class="page-banner-title">
-							تواصل معنا: فريقنا مستعد
-							<br>
-							للإجابة على استفساراتك وتلقي ملاحظتك
-						</h1>
-						<p class="banner-desc mb-0">
-							اكتشف طرقًا جديدة للتواصل معنا والحصول على دعم مميز وحلول مبتكرة تلبي احتياجاتك الفورية. نحن هنا للاستماع إلى استفساراتك، وحل مشاكلك، وتلبية احتياجاتك بكفاءة وفعالية.
-						</p>
-					</div>
+	<!-- library -->
+	<section class="library-section sec-padding bg-grey wow fadeInUp">
+		<div class="container">
+			<div class="section-title2 mb-45">
+				<h2 class="mb-0">حسابي</h2>
+			</div>
+			<ul class="nav nav-tabs def-tabs mb-46" id="myTab" role="tablist">
+				<li class="nav-item" role="presentation">
+					<button class="nav-link active" id="personal-tab" data-bs-toggle="tab" data-bs-target="#personal" type="button" role="tab" aria-selected="true">
+						<i class="icon-teacher"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span></i> البيانات الشخصية
+					</button>
+				</li>
+				<li class="nav-item" role="presentation">
+					<button class="nav-link" id="changePassword-tab" data-bs-toggle="tab" data-bs-target="#changePassword" type="button" role="tab" aria-selected="false">
+						<i class="icon-lock"></i> تغير كلمة المرور
+					</button>
+				</li>
+			</ul>
+			<div class="tab-content p-3 pt-4" id="myTabContent">
+				<!-- Personal Tab -->
+				<div class="tab-pane fade show active" id="personal" role="tabpanel">
+					<form class="main-form white">
+						<div class="row">
+							<div class="col-lg-4 col-md-6">
+								<div class="form-group mb-4">
+									<label class="form-label dark-color mb-3 fw-600">اسم الطالب</label>
+									<input type="text" class="form-control" placeholder="اسم الطالب">
+								</div>
+							</div>
+							<div class="col-lg-4 col-md-6">
+								<div class="form-group mb-4">
+									<label class="form-label dark-color mb-3 fw-600">البريد الالكتروني</label>
+									<input type="text" class="form-control" placeholder="البريد الالكتروني">
+								</div>
+							</div>
+							<div class="col-lg-12"></div>
+							<div class="col-lg-4 col-md-6">
+								<div class="form-group mb-4">
+									<label class="form-label dark-color mb-3 fw-600">رقم الهاتف</label>
+									<!-- <input type="text" class="form-control" placeholder="رقم الهاتف"> -->
+									<div dir="ltr">
+										<input id="phone" name="phone" dir="ltr" type="tel" class="form-control" value="" />
+									</div>
+								</div>
+							</div>
+						</div>
+						<button type="submit" class="main-btn mt-3">حفظ التعديلات</button>
+					</form>
 				</div>
+
+				<!-- changePassword Tab -->
+				<div class="tab-pane fade" id="changePassword" role="tabpanel">
+					<form class="main-form white">
+						<div class="row">
+							<div class="col-lg-5">
+								<h5 class="dark-color fw-600 mb-2">تغير كلمة المرور</h5>
+								<p class="mb-46 dark-color opacity-70">
+									لتغيير كلمة المرور الخاصة بك، يرجى ملء الحقول أدناه.
+									يجب أن تحتوي كلمة المرور الخاصة بك على 8 أحرف على الأقل، ويجب أن تتضمن أيضًا حرفًا كبيرًا واحدًا وحرفًا صغيرًا واحدًا
+									على الأقل ورقمًا واحدًا وحرفًا خاصًا واحدًا على الأقل.
+								</p>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-lg-4 col-md-6">
+								<div class="form-group mb-4">
+									<label class="form-label dark-color mb-3 fw-600">كلمة المرور الحالية</label>
+									<div class="input-icon">
+										<input type="password" class="form-control" placeholder="اكتب كلمة المرور الحالية هنا">
+										<i class="icon-lock-outline"></i>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-12"></div>
+							<div class="col-lg-4 col-md-6">
+								<div class="form-group mb-4">
+									<label class="form-label dark-color mb-3 fw-600">كلمة المرور الجديدة</label>
+									<div class="input-icon">
+										<input type="password" class="form-control" placeholder="اكتب كلمة المرور الجديدة هنا">
+										<i class="icon-lock-outline"></i>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-4 col-md-6">
+								<div class="form-group mb-4">
+									<label class="form-label dark-color mb-3 fw-600">تأكيد كلمة المرور الجديدة</label>
+									<div class="input-icon">
+										<input type="password" class="form-control" placeholder="اكتب تأكيد كلمة المرور الجديدة هنا">
+										<i class="icon-lock-outline"></i>
+									</div>
+								</div>
+							</div>
+						</div>
+						<button type="submit" class="main-btn mt-3">حفظ التعديلات</button>
+					</form>
+				</div>
+
 			</div>
 		</div>
-	</div>
-
-	<div class="bg-grey">
-
-		<!-- Contact -->
-		<section class="contact-section sec-padding wow fadeInUp">
-			<div class="container">
-				<div class="row gx-lg-6">
-					<div class="col-lg-6 mb-4 mb-lg-0">
-						<div class="section-title2 mb-45">
-							<h2 class="mb-0">اسأل كيف يمكننا مساعدتك</h2>
-						</div>
-						<p class="small-text dark-color mb-4">
-							هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل
-							هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق.
-						</p>
-						<p class="small-text dark-color">
-							هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا
-							النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق.
-						</p>
-						<div class="contact-info">
-							<div class="section-title2 mb-45">
-								<h2 class="mb-0">جهات الاتصال</h2>
-							</div>
-
-							<h5 class="dark-color">الهاتف</h5>
-							<p class="phone mb-0">+090 2918381</p>
-							<p class="address mb-0">الأردن ,عمان</p>
-							<br>
-							<h5 class="dark-color">البريد الالكتروني</h5>
-							<p class="mail mb-0">Hakeem21A@gmail.com</p>
-							<br>
-							<h5 class="dark-color">الدعم</h5>
-							<p class="mail mb-0">Hakeem21A@gmail.com</p>
-						</div>
-					</div>
-					<div class="col-lg-6">
-						<div class="contact-form">
-							<form class="main-form">
-								<div class="row">
-									<div class="col-lg-6 mb-25">
-										<label class="form-label">الأسم الأول</label>
-										<input type="text" class="form-control" placeholder="اكتب الأسم الاول هنا" >
-									</div>
-									<div class="col-lg-6 mb-25">
-										<label class="form-label">الأسم الأخير</label>
-										<input type="text" class="form-control" placeholder="اكتب الأسم الأخير هنا" >
-									</div>
-									<div class="col-lg-6 mb-25">
-										<label class="form-label">البريد الألكتروني</label>
-										<input type="text" class="form-control" placeholder="اكتب البريد الألكتروني هنا" >
-									</div>
-									<div class="col-lg-6 mb-25">
-										<label class="form-label">رقم الهاتف</label>
-										<input type="text" class="form-control" placeholder="اكتب رقم الهاتف هنا" >
-									</div>
-									<div class="col-lg-6 mb-25">
-										<label class="form-label">نوع الإستفسار</label>
-										<select class="form-select">
-											<option selected>مشكلة في الدفع</option>
-											<option value="1">One</option>
-											<option value="2">Two</option>
-											<option value="3">Three</option>
-										</select>
-									</div>
-									<div class="col-lg-12 mb-25">
-										<label class="form-label">كيف يمكننا مساعدتك؟</label>
-										<textarea class="form-control" rows="5" placeholder="من فضلك اكتب الوصف هنا......"></textarea>
-									</div>
-								</div>
-								<div class="text-end">
-									<button type="submit" class="main-btn">إرسال</button>
-								</div>
-							</form>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-	</div>
+	</section>
 
 	<!-- start footer -->
 	<footer>
@@ -295,8 +300,20 @@
 	<!--        carousel -->
 	<script src="assets/js/vendors/owl.carousel.min.js"></script>
 
+	<!-- 		intTelInput -->
+	<script src="assets/js/vendors/intlTelInputWithUtils.min.js"></script>
+
 	<!--        Main Js -->
 	<script src="assets/js/main.js"></script>
+
+	<script>
+		const input = document.querySelector("#phone");
+		const iti = window.intlTelInput(input, {
+		  initialCountry: "sa",
+		  separateDialCode: true
+		});
+		window.iti = iti; // useful for testing
+	  </script>
 </body>
 
 </html>
