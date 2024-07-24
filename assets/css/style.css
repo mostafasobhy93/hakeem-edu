@@ -1866,6 +1866,20 @@ footer .copyrights {
     border-radius: .42rem;
     box-shadow: none;
 }
+.teachers-section .teachers-filter .input-icon {
+    position: relative;
+}
+.teachers-section .teachers-filter .input-icon .form-control {
+    padding-right: 2.75rem;
+}
+.teachers-section .teachers-filter .input-icon i {
+    position: absolute;
+    top: 50%;
+    right: 1rem;
+    transform: translateY(-50%);
+    font-size: 1.25rem;
+    color: rgba(40, 48, 63, .5);
+}
 .teachers-section .teachers-filter .form-select {
     border-radius: .42rem;
     box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.25);
