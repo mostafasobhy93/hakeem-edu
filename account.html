@@ -137,6 +137,12 @@
 				<div class="tab-pane fade show active" id="personal" role="tabpanel">
 					<form class="main-form white">
 						<div class="row">
+							<div class="col-lg-12 mb-45">
+								<div id="image-preview">
+									<label for="image-upload" id="image-label"><i class="icon-camera"></i></label>
+									<input type="file" name="image" id="image-upload" />
+								  </div>
+							</div>
 							<div class="col-lg-4 col-md-6">
 								<div class="form-group mb-4">
 									<label class="form-label dark-color mb-3 fw-600">اسم الطالب</label>
@@ -230,10 +236,10 @@
 				<div class="col-lg-6">
 					<ul class="links-list def-color d-flex gap-3 justify-content-lg-end mb-46">
 						<li>
-							<a href="#" class="text-decoration-underline">معلومات عنا</a>
+							<a href="about.html" class="text-decoration-underline">معلومات عنا</a>
 						</li>
 						<li>
-							<a href="#" class="text-decoration-underline">تواصل معنا</a>
+							<a href="contact.html" class="text-decoration-underline">تواصل معنا</a>
 						</li>
 						<li>
 							<a href="#" class="text-decoration-underline">الشورط والأحكام</a>
@@ -303,6 +309,9 @@
 	<!-- 		intTelInput -->
 	<script src="assets/js/vendors/intlTelInputWithUtils.min.js"></script>
 
+	<!-- 		File Uploader -->
+	<script src="assets/js/vendors/jquery.uploadPreview.min.js"></script>
+
 	<!--        Main Js -->
 	<script src="assets/js/main.js"></script>
 
@@ -314,6 +323,19 @@
 		});
 		window.iti = iti; // useful for testing
 	  </script>
+
+	<script type="text/javascript">
+		$(document).ready(function () {
+			$.uploadPreview({
+				input_field: "#image-upload",   // Default: .image-upload
+				preview_box: "#image-preview",  // Default: .image-preview
+				label_field: "#image-label",    // Default: .image-label
+				//label_default: "Choose File",   // Default: Choose File
+				//label_selected: "Change File",  // Default: Change File
+				no_label: true                 // Default: false
+			});
+		});
+	</script>
 </body>
 
 </html>
