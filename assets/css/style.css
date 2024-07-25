@@ -63,6 +63,9 @@ a:focus {
 .def-color {
     color: var(--grey-font);
 }
+.green-color {
+    color: #00A887;
+}
 .grey-text {
     color: var(--grey-font);
     opacity: .7;
@@ -1101,13 +1104,43 @@ header nav .nav-account .account .dropdown-menu li a i {
 .main-form .input-icon .form-control {
     padding-right: 2.75rem;
 }
-.main-form .input-icon i {
+.main-form .input-icon i, .main-form .input-icon svg {
     position: absolute;
     top: 50%;
     right: 1rem;
     transform: translateY(-50%);
     font-size: 1.5rem;
     color: rgba(0, 0, 0, .6);
+}
+.main-form .main-btn[disabled] {
+    opacity: .6;
+    cursor: not-allowed;
+}
+.main-form .otp-input {
+    height: 3.125rem;
+    width: 3.125rem;
+    border: 1px solid #E4E4E4;
+    outline: none;
+    text-align: center;
+    font-size: 1.75em;
+    border-radius: 0.3rem;
+    background-color: #E4E4E4;
+    color: #000;
+    outline: none;
+    /*Hide number field arrows*/
+    -moz-appearance: textfield;
+}
+.main-form .otp-input[type="number"]::-webkit-outer-spin-button,
+.main-form .otp-input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+.main-form .otp-input:disabled {
+    color: #000;
+}
+.main-form .otp-input:focus {
+    border: 1px solid #C32727;
+    background-color: #fff;
 }
 
 /* iti */
@@ -1117,6 +1150,10 @@ header nav .nav-account .account .dropdown-menu li a i {
 .main-form .form-control.iti__tel-input {
     padding-left: 100px !important;
     padding-right: 1rem !important;
+}
+.main-form .input-icon .form-control.iti__tel-input {
+    padding-right: 2.75rem !important;
+    text-align: right;
 }
 .main-form .iti__country-container .iti__selected-country {
     border-right: 1px solid #d1d1d1;
@@ -2090,6 +2127,37 @@ footer .copyrights {
 }
 
 /***
+    Login
+***/
+.login-section .login-form {
+    padding: 8rem 2rem 8rem 8.7rem;
+}
+.login-section.register-section .login-form {
+    padding: 2rem;
+}
+.login-section .login-bg {
+    position: relative;
+    padding: 8rem 5rem;
+    background-image: url(../img/login-bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+.login-section .login-bg::before {
+    background-color: rgba(18, 4, 4, 0.8);
+    bottom: 0;
+    content: "";
+    right: 0;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.login-section .login-bg img {
+    width: 8.875rem;
+}
+
+/***
     Start Modal
 ***/
 .def-modal .modal-dialog {
@@ -2258,6 +2326,14 @@ footer .copyrights {
     .courses-section .courses-filter .filter-wrapper .form-group {
         width: calc(50% - 1rem);
         flex: auto;
+    }
+    .login-section .login-bg {
+        min-height: 50vh;
+        padding: 6rem 1rem;
+    }
+    .login-section .login-form, .login-section.register-section .login-form {
+        order: 2;
+        padding: 2rem 1.5rem;
     }
 }
 
