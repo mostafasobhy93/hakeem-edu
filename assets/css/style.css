@@ -635,6 +635,9 @@ header nav .nav-account .account .dropdown-menu {
 header nav .nav-account .account .dropdown-toggle {
     color: var(--grey-font);
 }
+header.white-header nav .nav-account .account .dropdown-toggle {
+    color: var(--primary);
+}
 header nav .nav-account .account .dropdown-toggle i {
     margin-left: .35rem;
     font-size: .9rem;
@@ -839,11 +842,12 @@ header nav .nav-account .account .dropdown-menu li a i {
 }
 .courses-section .course-card .card-footer button,
 .courses-section .course-card .card-footer a {
-	font-size: 1.25rem;
+	font-size: 1.2rem;
     line-height: 1.75rem;
     padding: .55rem 1rem;
     text-align: center;
     flex: 1;
+    white-space: nowrap;
 }
 .courses-section .course-card .card-footer .add-to-cart {
     color: var(--primary);
