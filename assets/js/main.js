@@ -41,8 +41,6 @@ $(document).ready(function () {
         dots: true,
         nav: false,
 		rtl: isRTL,
-        animateOut: "slideOutDown",
-        animateIn: "fadeIn",
         active: true,
         smartSpeed: 1000,
         autoplay: true,
