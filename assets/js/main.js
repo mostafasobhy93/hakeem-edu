@@ -31,11 +31,12 @@ $(document).ready(function () {
         }, 600);
     });
     
+    //    Hero Section
     var isRTL = $("html").attr("dir") === "rtl"; 
+    var $heroSection = $('.hero-section');
     
-//    Hero Section
     $(".hero-section .hero-slides").owlCarousel({
-        loop: true,
+        loop: false,
         items: 1,
         margin: 0,
         dots: true,
@@ -43,9 +44,23 @@ $(document).ready(function () {
 		rtl: isRTL,
         active: true,
         smartSpeed: 1000,
-        autoplay: true,
-        autoplayTimeout: 5000,
+        // autoplay: true,
+        // autoplayTimeout: 5000,
+
+        onChanged: function(event) {  
+            // Get the current item index  
+            var currentIndex = event.item.index;  
+
+            // Find the corresponding background image from the current item  
+            var newBgImage = $(event.target).find('.hero-content').eq(currentIndex).data('bg');  
+
+            // Change the background image of the hero section  
+            $heroSection.css('background-image', 'url(' + newBgImage + ')');  
+        }, 
     });
+    // Initial background image set from the first item  
+    var initialBgImage = $('.owl-carousel .hero-content').eq(0).data('bg');  
+    $heroSection.css('background-image', 'url(' + initialBgImage + ')');  
 	
 //    Testimonial Slider
     $(".testimonial-section .testimonial-slider").owlCarousel({

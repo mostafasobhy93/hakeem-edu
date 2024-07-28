@@ -704,6 +704,7 @@ header nav .nav-account .account .dropdown-menu li a i {
     background-size: cover;
     min-height: 45rem;
     padding-bottom: 1.5rem;
+    transition: background-image 0.5s ease-in-out;
 }
 .hero-section:before {
     background-color: rgba(18, 4, 4, 0.8);
